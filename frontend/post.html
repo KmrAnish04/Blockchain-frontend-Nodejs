@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Create Post</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav style="background-color: #eceff1;">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo" style="color: black; margin-left: 10px">IIIT-Allahabad</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container">
+          <h1 style="text-align: center;">Origional Content Creation</h1>
+
+            <!-- Form -->
+            <div class="container">
+                <h5 style="text-align: center;">Post Content</h5>
+                <br>
+                <div class="container" style="padding: 2%; background-color: #eceff1; border-radius:30px" >
+                    <h4><b>Post</b></h4>
+                    <br>
+                    <div class="row">
+                        <form action="/formPost/" method="POST" class="col s12" id="post-form">
+                            <!-- {% csrf_token %} -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="userName" type="text" name="userName" data-length="50" required>
+                                <label class="form-label" for="userName">Creator Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <textarea id="caption" name="caption" class="materialize-textarea" data-length="50" required></textarea>
+                            <label class="form-label" for="caption">Content</label>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="input-field col s12">
+                            <textarea id="memeURL" name="memeURL" class="materialize-textarea" data-length="10000000" required></textarea>
+                            <label class="form-label" for="memeURL">Meme URL</label>
+                            </div>
+                        </div> -->
+                        <button class="btn waves-effect blue-grey darken-1" type="submit" >Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+      </div>
+    
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="/script.js"></script> -->
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
